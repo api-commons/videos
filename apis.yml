@@ -1,0 +1,55 @@
+aid: base-videos
+name: Videos
+type: Base
+description: |-
+  A base Videos API for the API Commons — a starting point you copy into your own
+  service rather than a hosted API. Video is not ready when the upload finishes, so status moves through processing and the base ships webhooks instead of asking clients to poll. Captions are a first-class sub-resource.
+
+  Errors are RFC 9457 problem details, identical across every API Commons base, and
+  checked in CI by the API Commons Problem Details Spectral ruleset.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Videos
+- Media
+- Captions
+created: '2026-08-17'
+modified: '2026-08-17'
+url: https://raw.githubusercontent.com/api-commons/videos/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: base-videos:videos
+  name: Videos API
+  description: A base Videos API — upload, transcoding, playback renditions, and captions, described once.
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://apicommons.org/base/videos/
+  baseURL: https://api.example.com
+  tags:
+  - API
+  - Application Programming Interface
+  - Videos
+  - Media
+  - Captions
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/videos/main/openapi.yml
+  - type: GitHubRepository
+    url: https://github.com/api-commons/videos
+  - type: Documentation
+    url: https://apicommons.org/base/videos/
+  - type: SpectralRules
+    url: https://raw.githubusercontent.com/api-commons/spectral-problem-details-ruleset/main/problem-details.yaml
+  - type: License
+    url: https://github.com/api-commons/videos/blob/main/LICENSE
+  contact:
+  - FN: API Evangelist
+    email: info@apievangelist.com
+common:
+- type: Commons
+  url: https://apicommons.org/base/videos/
+- type: Discussion
+  url: https://github.com/orgs/api-commons/discussions
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
